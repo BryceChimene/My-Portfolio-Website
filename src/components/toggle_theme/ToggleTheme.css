@@ -1,0 +1,41 @@
+.toggle-theme-container {
+    position: absolute;
+    height: auto;
+    right: 2em;
+}
+.toggle-theme {
+    visibility: hidden;
+}
+
+.toggle-theme + label {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+
+.toggle-theme + label::before {
+    content: "";
+    height: 1em;
+    width: 2em;
+    border-radius: 1em;
+    background-color: var(--accent-color);
+    margin-right: 0.5em;
+    transition: background-color 250ms ease-in-out;
+}
+
+.toggle-theme + label::after {
+    content: "";
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 1em;
+    background-color: var(--foreground-color);
+    position: absolute;
+    left: 0.2em;
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.toggle-theme:checked + label::after {
+    transform: translateX(100%);
+}
