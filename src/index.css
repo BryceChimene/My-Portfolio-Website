@@ -52,3 +52,57 @@ span {
   font-size: 0.9375rem;  /* 15px */
   font-weight: 300;      /* Light */
 }
+
+/* Medium Devices (≥768px and <1024px) */
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 3rem;       /* 48px */
+  }
+
+  h2 {
+    font-size: 2rem;       /* 32px */
+  }
+
+  h3 {
+    font-size: 1.5rem;     /* 24px */
+  }
+
+  h4 {
+    font-size: 1.125rem;   /* 18px */
+  }
+
+  p {
+    font-size: 1rem;       /* 16px */
+  }
+
+  span {
+    font-size: 0.875rem;   /* 14px */
+  }
+}
+
+/* Small Devices (<768px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.25rem;    /* 36px */
+  }
+
+  h2 {
+    font-size: 1.75rem;    /* 28px */
+  }
+
+  h3 {
+    font-size: 1.25rem;    /* 20px */
+  }
+
+  h4 {
+    font-size: 1rem;       /* 16px */
+  }
+
+  p {
+    font-size: 0.9375rem;  /* 15px */
+  }
+
+  span {
+    font-size: 0.8125rem;  /* 13px */
+  }
+}
