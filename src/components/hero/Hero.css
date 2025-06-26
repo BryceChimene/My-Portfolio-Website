@@ -1,0 +1,115 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Avatar Section */
+.avatar {
+    color: var(--background-color);
+    stroke: var(--secondary-text-color);
+    fill: currentColor;
+}
+
+/* Header Section */
+.hero-header-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+h1 {
+    display: inline;
+    color: var(--secondary-text-color);
+}
+.header-button {
+    width: 55px;
+    padding-top: 10px;
+    border: none;
+    border-top: 4px solid var(--secondary-text-color);
+    box-sizing:border-box;
+    background: none;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    stroke: currentColor;
+    fill: currentColor;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+}
+.header-button:hover {
+    border-top: 4px solid transparent;
+    color: var(--secondary-text-color);
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+/* SubHeading Section */
+.flip {
+  height:50px;
+  overflow:hidden;
+}
+.flip > div > h3 {
+  color: var(--primary-text-color);
+  width: 400px;
+  margin-bottom:45px;
+  text-align: center;
+  display:inline-block;
+}
+.flip div:first-child {
+  animation: show 15s linear infinite;
+}
+.flip .subheader-icon {
+  padding-top: 3px;
+  color: var(--secondary-text-color);
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+/* Buttons Section */
+h4 {
+  display: inline;
+}
+.button-container {
+  display: flex;
+  margin-top: 15px;
+  gap: 20px;
+}
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-text-color);
+  border-bottom: 5px solid;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.bottom-buttons:hover {
+  color: var(--secondary-text-color);
+  border-color: var(--secondary-text-color);
+}
+.bottom-button-icon {
+  color: var(--primary-text-color); /* Blue */
+  fill: currentColor;
+  transition: all 200ms ease;
+}
+.bottom-buttons:hover .bottom-button-icon {
+  color: var(--secondary-text-color);
+}
