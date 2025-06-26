@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 90px);
+  height: calc(100svh - 90px);
   z-index: 1;
 }
 
@@ -129,10 +129,18 @@ h4 {
   .flip > div > h3 {
     height: 45px;
   }
+  .flip .subheader-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /* Small Devices (<768px) */
 @media (max-width: 767px) {
+  .hero-container {
+    height: calc(100svh - 70px);
+
+  }
   .avatar {
     max-width: 250px;
     max-height: 250px;
@@ -141,11 +149,15 @@ h4 {
     display: none;
   }
   h1 {
-    font-size: 3rem;
+    font-size: auto;
     text-align: center;
   }
   .flip > div > h3 {
     height: 50px;
     width: 250px;
+  }
+  .flip .subheader-icon {
+    width: 20px;
+    height: 20px;
   }
 }
