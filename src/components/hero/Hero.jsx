@@ -9,7 +9,7 @@ import Avatar1 from "../../assets/Avatar1";
 import ResumeIcon from '../../assets/hero/ResumeIcon';
 import ContactIcon from '../../assets/hero/ContactIcon';
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="hero-container">
       <Avatar1 />

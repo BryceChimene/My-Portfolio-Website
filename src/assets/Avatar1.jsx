@@ -4,8 +4,8 @@ import avatar from "./avatar.png"; // local image import
 export default function Avatar1() {
   return (
     <svg
-      width="373"
-      height="373"
+      width="360"
+      height="360"
       viewBox="0 0 373 373"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

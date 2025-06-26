@@ -11,6 +11,7 @@
     color: var(--background-color);
     stroke: var(--secondary-text-color);
     fill: currentColor;
+    margin-bottom: 10px;
 }
 
 /* Header Section */
@@ -28,7 +29,6 @@ h1 {
     padding-top: 10px;
     border: none;
     border-top: 4px solid var(--secondary-text-color);
-    box-sizing:border-box;
     background: none;
     cursor: pointer;
     color: var(--primary-text-color);
@@ -66,7 +66,6 @@ h1 {
   width: 30px;
   height: 30px;
 }
-
 @keyframes show {
   0% {margin-top:-270px;}
   5% {margin-top:-180px;}
@@ -112,4 +111,34 @@ h4 {
 }
 .bottom-buttons:hover .bottom-button-icon {
   color: var(--secondary-text-color);
+}
+
+/* Medium Devices (≥768px and <1024px) */
+@media (max-width: 1023px) {
+  .avatar {
+    width: 340px;
+    height: 340px;
+  }
+  .flip > div > h3 {
+    height: 45px;
+  }
+}
+
+/* Small Devices (<768px) */
+@media (max-width: 767px) {
+  .avatar {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .hero-header-container a {
+    display: none;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .flip > div > h3 {
+    height: 50px;
+    width: 250px;
+  }
 }
