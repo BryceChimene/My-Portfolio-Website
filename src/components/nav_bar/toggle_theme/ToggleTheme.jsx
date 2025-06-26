@@ -10,7 +10,7 @@ export const ToggleTheme = ({ handleChange, isChecked }) => {
         onChange={handleChange}
         checked={isChecked}
       />
-      <label htmlFor="check">Theme</label>
+      <label htmlFor="check"></label>
     </div>
   );
 };

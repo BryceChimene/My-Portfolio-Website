@@ -11,13 +11,13 @@ import ContactIcon from '../../assets/hero/ContactIcon';
 
 export default function Hero() {
   return (
-    <div className="hero-container">
+    <div id='hero' className="hero-container">
       <Avatar1 />
       <HeroHeader />
       <HeroSubHeader />
       <div className="button-container">
         <Button img={<ResumeIcon />} text='Resume' />
-        <Button img={<ContactIcon />} text='Resume' />
+        <a href="mailto:brycechimene@yahoo.com"><Button img={<ContactIcon />} text='Contact' /></a>
       </div>
     </div>
   );

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +16,8 @@
   --nav-color: #a6c7e3;
   --primary-text-color: #000000;
   --secondary-text-color: #508dde;
+
+  --max-section-width: 1200px;
 }
 
 [data-theme="dark"] {

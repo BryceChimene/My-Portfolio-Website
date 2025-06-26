@@ -1,11 +1,12 @@
 .toggle-theme-container {
-    position: absolute;
-    height: auto;
-    right: 2em;
+    position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 .toggle-theme {
     visibility: hidden;
+    display: none;
 }
 
 .toggle-theme + label {
@@ -22,7 +23,6 @@
     width: 2em;
     border-radius: 1em;
     background-color: var(--accent-color);
-    margin-right: 0.5em;
     transition: background-color 250ms ease-in-out;
 }
 
