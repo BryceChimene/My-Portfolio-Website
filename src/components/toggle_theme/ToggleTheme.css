@@ -2,6 +2,7 @@
     position: absolute;
     height: auto;
     right: 2em;
+    z-index: 1;
 }
 .toggle-theme {
     visibility: hidden;

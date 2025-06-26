@@ -5,11 +5,14 @@ import "../App.css";
 import { ToggleTheme } from "./toggle_theme/ToggleTheme";
 import Hero from "./hero/Hero";
 
+import ParticlesComponent from './particles';
+
 export default function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <ParticlesComponent id="particles" isDark={isDark}/>
       <Hero /> 
       <ToggleTheme isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
     </div>
