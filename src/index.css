@@ -15,12 +15,12 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #000000;
-  --accent-color: #eff8ff; 
-  --foreground-color: #508dde;
+  --background-color: #151515;
+  --accent-color: #363636; 
+  --foreground-color: #53ace0;
   --nav-color: #a6c7e3;
-  --primary-text-color: #000000;
-  --secondary-text-color: #508dde;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #53ace0;
 } 
 
 h1 {

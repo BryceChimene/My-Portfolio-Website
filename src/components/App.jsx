@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
       <Hero /> 
-      {/* <ToggleTheme isChecked={isDark} handleChange={() => setIsDark(!isDark)} /> */}
+      <ToggleTheme isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
     </div>
   );
 }

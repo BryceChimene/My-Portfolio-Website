@@ -79,6 +79,7 @@ h1 {
 
 /* Buttons Section */
 h4 {
+  color: var(--primary-text-color);
   display: inline;
 }
 .button-container {
@@ -95,7 +96,7 @@ h4 {
   width: 150px;
   border-radius: 5px;
   border: 2px solid var(--primary-text-color);
-  border-bottom: 5px solid;
+  border-bottom: 5px solid var(--primary-text-color);
   background-color: var(--background-color);
   cursor: pointer;
   transition: all 200ms ease;
