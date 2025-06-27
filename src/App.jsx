@@ -1,10 +1,10 @@
 import React from "react";
 import useLocalStorage from "use-local-storage";
 
-import "../App.css";
-import ParticlesBackground from './ParticlesBackground';
-import Hero from "./hero/Hero";
-import NavBar from "./nav_bar/NavBar";
+import "./App.css";
+import ParticlesBackground from './components/ParticlesBackground';
+import Hero from "./components/hero/Hero";
+import NavBar from "./components/nav_bar/NavBar";
 
 export default function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);

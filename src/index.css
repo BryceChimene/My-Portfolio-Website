@@ -17,6 +17,7 @@ html {
   --primary-text-color: #000000;
   --secondary-text-color: #508dde;
 
+  --background-texture: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
   --max-section-width: 1200px;
 }
 
@@ -27,6 +28,8 @@ html {
   --nav-color: #a6c7e3;
   --primary-text-color: #ffffff;
   --secondary-text-color: #53ace0;
+  
+  --background-texture: url("https://www.transparenttextures.com/patterns/black-paper.png");
 } 
 
 h1 {
