@@ -1,0 +1,41 @@
+#portfolio-section {
+    scroll-margin-top: 90px;
+    background-color: var(--accent-color);
+}
+.portfolio-container {
+    z-index: 1;
+    max-width: var(--max-section-width);
+    width: 100%;
+}
+
+.portfolio-container h2:first-child {
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+/* Hightlight Project */
+.highlight-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.highlight-container > div > div {
+    position: absolute;
+    background-color: var(--nav-color);
+    color: black;
+    padding: 30px 0 30px 30px;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 5px;
+}
+.highlight-container > div {
+    max-width: 850px;
+    width: 100%;
+  }
+.highlight-container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* optional */
+}

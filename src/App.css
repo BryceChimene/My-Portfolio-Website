@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   transition: all 250ms ease-in-out;
-  overflow-x: hidden;
 }
 
 #particles canvas {

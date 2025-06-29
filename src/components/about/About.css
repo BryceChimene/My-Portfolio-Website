@@ -1,10 +1,9 @@
 #about-section {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 90px;
     background-color: var(--background-color);
 }
 .about-container {
     z-index: 1;
-    background-color: var(--background-color);
     display: grid;
     grid-template-columns: 150px auto 150px;
     gap: 40px;
@@ -79,7 +78,7 @@
     align-items: center;
     text-align: center;
     gap: 5px;
-    width: 200px;
+    max-width: 200px;
 }
 .timeline-icon-container{
     display: flex;
@@ -125,7 +124,7 @@
     .timeline-event {
         display: grid;
         grid-template-columns: 1fr 28px 1fr;
-        width: fit-content;
+        max-width: 300px;
         margin: 10px 0 10px 0;
     }
     .timeline-line {
