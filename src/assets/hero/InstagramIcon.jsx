@@ -6,7 +6,7 @@ export default function InstagramIcon() {
       viewBox="0 0 20 20"
       fill="transparent"
       xmlns="http://www.w3.org/2000/svg"
-      className="header-button-icon"
+      className="header-button-icon insta"
     >
       <g clip-path="url(#clip0_28_50)">
         <path
@@ -19,7 +19,6 @@ export default function InstagramIcon() {
         />
         <path
           d="M15.4167 5.83334C16.107 5.83334 16.6667 5.2737 16.6667 4.58334C16.6667 3.89299 16.107 3.33334 15.4167 3.33334C14.7263 3.33334 14.1667 3.89299 14.1667 4.58334C14.1667 5.2737 14.7263 5.83334 15.4167 5.83334Z"
-          fill="black"
         />
       </g>
       <defs>

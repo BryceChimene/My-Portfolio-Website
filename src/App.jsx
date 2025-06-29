@@ -5,6 +5,7 @@ import "./App.css";
 import ParticlesBackground from './components/ParticlesBackground';
 import Hero from "./components/hero/Hero";
 import NavBar from "./components/nav_bar/NavBar";
+import About from "./components/about/about";
 
 export default function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -14,6 +15,7 @@ export default function App() {
       <ParticlesBackground id="particles" isDark={isDark}/>
       <Hero /> 
       <NavBar isDark={isDark} ToggleTheme={() => setIsDark(!isDark)} />
+      <About />
       <div className="temp"></div>
     </div>
   );

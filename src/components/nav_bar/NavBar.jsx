@@ -23,7 +23,7 @@ export default function NavBar(props) {
                 </div>
 
                 <div className={`nav-link-container ${menuOpen ? 'open' : ''}`}>
-                    <a><h4>ABOUT</h4></a>
+                    <a href='#about-section'><h4>ABOUT</h4></a>
                     <a><h4>PORTFOLIO</h4></a>
                     <a><h4>TECH</h4></a>
                 </div>
