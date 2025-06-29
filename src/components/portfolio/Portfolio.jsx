@@ -1,4 +1,5 @@
 import './Portfolio.css'
+import ProjectCarousel from './ProjectCarousel'
 
 export default function Portfolio() {
     return <div id="portfolio-section" className="section">
@@ -13,6 +14,7 @@ export default function Portfolio() {
                     <img src='src/assets/portfolio/tern_image.png' alt='tern intern'/>
                 </div>
             </div>
+            <ProjectCarousel />
         </div>
     </div>
 }

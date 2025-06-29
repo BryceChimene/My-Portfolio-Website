@@ -18,6 +18,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
 }
 .highlight-container > div > div {
     position: absolute;
@@ -38,4 +39,25 @@
     height: auto;
     display: block;
     object-fit: cover; /* optional */
+}
+
+/* Project Carousel */
+.project-carousel-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+.project-container {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 10px var(--background-color);
+    padding-bottom: 5px;
+}
+.project-container p {
+    color: var(--secondary-text-color);
+}
+.project-container p,h3 {
+    margin-left: 5px;
 }
