@@ -8,9 +8,10 @@ import NavBar from "./components/nav_bar/NavBar";
 import About from "./components/about/about";
 import Portfolio from "./components/portfolio/Portfolio";
 import Tech from "./components/tech/Tech";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
-  const [isDark, setIsDark] = useLocalStorage("isDark", false);
+  const [isDark, setIsDark] = useLocalStorage("isDark", true);
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
@@ -20,6 +21,7 @@ export default function App() {
       <About />
       <Portfolio />
       <Tech />
+      <Footer />
     </div>
   );
 }

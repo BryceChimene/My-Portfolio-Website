@@ -1,13 +1,55 @@
 #tech-section {
     scroll-margin-top: 90px;
+    margin-bottom: 70px;
 }
 .tech-container {
+    display: flex;
+    flex-direction: column;
     z-index: 1;
     max-width: var(--max-section-width);
     width: 100%;
-    height: 800px;
 }
 .tech-container h2:first-child {
     color: var(--secondary-text-color);
+    margin-bottom: 40px;
+}
+.tech-container h4 {
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
     margin-bottom: 20px;
+}
+.tech-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    height: 70px;
+    padding-left: 10px;
+    border-radius: 10px;
+    transition: box-shadow 250ms ease-in-out;
+}
+.tech-item:hover {
+    box-shadow: 0 0 15px 10px var(--foreground-color);
+}
+.tech-item p {
+    margin-left: 10px;
+}
+
+/* grid responsiveness */
+@media (max-width: 1000px) {
+    .tech-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Small Devices (<768px) */
+@media (max-width: 767px) {
+    .tech-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
 }
