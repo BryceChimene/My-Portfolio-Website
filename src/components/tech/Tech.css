@@ -1,11 +1,12 @@
 #tech-section {
     scroll-margin-top: 90px;
     margin-bottom: 70px;
+    position: relative;
+    z-index: 1;
 }
 .tech-container {
     display: flex;
     flex-direction: column;
-    z-index: 1;
     max-width: var(--max-section-width);
     width: 100%;
 }
@@ -30,6 +31,7 @@
     height: 70px;
     padding-left: 10px;
     border-radius: 10px;
+    box-shadow: 0 0 20px 2px var(--background-color);
     transition: box-shadow 250ms ease-in-out;
 }
 .tech-item:hover {
@@ -51,5 +53,9 @@
     .tech-list {
         grid-template-columns: 1fr 1fr;
         gap: 5px;
+    }
+
+    #tech-section {
+        scroll-margin-top: 70px;
     }
 }

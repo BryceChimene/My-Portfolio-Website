@@ -23,9 +23,9 @@ export default function NavBar(props) {
                 </div>
 
                 <div className={`nav-link-container ${menuOpen ? 'open' : ''}`}>
-                    <a href='#about-section'><h4>ABOUT</h4></a>
-                    <a href='#portfolio-section'><h4>PORTFOLIO</h4></a>
-                    <a href='#tech-section'><h4>TECH</h4></a>
+                    <a href='#about-section' onClick={() => {setMenuOpen(!menuOpen)}}><h4>ABOUT</h4></a>
+                    <a href='#portfolio-section' onClick={() => {setMenuOpen(!menuOpen)}}><h4>PORTFOLIO</h4></a>
+                    <a href='#tech-section' onClick={() => {setMenuOpen(!menuOpen)}}><h4>TECH</h4></a>
                 </div>
             </div>
 

@@ -21,7 +21,7 @@
     align-items: center;
     gap: 15px;
 }
-h1 {
+.hero-header-container h1 {
     display: inline;
     color: var(--secondary-text-color);
 }

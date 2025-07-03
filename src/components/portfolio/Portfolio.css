@@ -1,9 +1,11 @@
 #portfolio-section {
     scroll-margin-top: 90px;
     background-color: var(--accent-color);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 200px -20px var(--secondary-text-color);
 }
 .portfolio-container {
-    z-index: 1;
     max-width: var(--max-section-width);
     width: 100%;
 }
@@ -60,4 +62,11 @@
 }
 .project-container p,h3 {
     margin-left: 5px;
+}
+
+/* Small Devices (<768px) */
+@media (max-width: 767px) {
+    #portfolio-section {
+        scroll-margin-top: 70px;
+    }
 }
