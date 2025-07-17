@@ -1,9 +1,9 @@
 import './Footer.css'
 
-import EmailIcon from '../../assets/hero/EmailIcon'
-import GithubIcon from '../../assets/hero/GithubIcon'
-import LinkedinIcon from '../../assets/hero/LinkedinIcon'
-import InstagramIcon from '../../assets/hero/InstagramIcon'
+import EmailIcon from '../../assets/icons/hero/EmailIcon'
+import GithubIcon from '../../assets/icons/hero/GithubIcon'
+import LinkedinIcon from '../../assets/icons/hero/LinkedinIcon'
+import InstagramIcon from '../../assets/icons/hero/InstagramIcon'
 
 export default function Footer() {
     return <div id='footer-section'>

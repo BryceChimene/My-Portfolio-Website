@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
+  background-color: var(--nav-color);
 }
-
 * {
   margin: 0;
   padding: 0;

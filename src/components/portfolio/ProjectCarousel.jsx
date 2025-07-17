@@ -1,21 +1,15 @@
 import Project from './Project'
 
-export default function ProjectCarousel() {
+export default function ProjectCarousel({ projects }) {
     return <div className="project-carousel-container">
-        <Project 
-            img="src/assets/portfolio/hometown_image.png"
-            subheading="FREELANCE PROJECT"
-            heading="HomeTown Fitness"
-        />
-        <Project 
-            img="src/assets/portfolio/body_image.png"
-            subheading="PERSONAL PROJECT"
-            heading="Body Builder"
-        />
-        <Project 
-            img="src/assets/portfolio/portfolio_image.png"
-            subheading="PERSONAL PROJECT"
-            heading="Portfolio"
-        />
+        {projects.map((project, index) => (
+            <Project
+                key={index}
+                index={index}
+                img={project.img}
+                subheading={project.projectType}
+                heading={project.title}
+            />
+        ))}
     </div>
 }

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../assets/utils/motionUtils';
 import { ToggleTheme } from './toggle_theme/ToggleTheme'
 import './NavBar.css'
-import Avatar1 from '../../assets/Avatar1'
+import Avatar1 from '../../assets/icons/Avatar1'
 
 export default function NavBar(props) {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    return <div className="navbar-container">
+    return <motion.div className="navbar-container"
+        variants={fadeIn("up", 0.5)}
+        initial="hidden" 
+        animate="show"
+        >
         <div className='navbar-section'>
             <a href='#hero' className='profile-container'>
                 <Avatar1 />
@@ -28,7 +34,6 @@ export default function NavBar(props) {
                     <a href='#tech-section' onClick={() => {setMenuOpen(!menuOpen)}}><h4>TECH</h4></a>
                 </div>
             </div>
-
         </div>
-    </div>
+    </motion.div>
 }

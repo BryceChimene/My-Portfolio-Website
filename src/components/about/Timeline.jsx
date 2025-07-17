@@ -1,31 +1,44 @@
+import timelineEvent from "../../assets/utils/timelineUtils"
 import TimelineEvent from "./TimelineEvent";
-
-import GraduationIcon from "../../assets/about_timeline/GraduationIcon";
-import CodeIcon from "../../assets/about_timeline/CodeIcon";
-import CertificateIcon from "../../assets/about_timeline/CertificateIcon";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../assets/utils/motionUtils';
 
 export default function Timeline() {
-    return <div className="timeline-container">
-        <hr className="timeline-line"/>
-        <TimelineEvent 
-            topText={<>Graduated from<br />Texas Lutheran University</>}
-            icon={<GraduationIcon />}
-            bottomText={<>05/2024<br /><br /></>}
-        />
-        <TimelineEvent 
-            topText={<><br />09/2024</>}
-            icon={<CodeIcon />}
-            bottomText={<>Freelance Web Developer<br />HomeTown Fitness</>}
-        />
-        <TimelineEvent 
-            topText={<>React/TypeScript<br />Developer Intern at Tern</>}
-            icon={<CertificateIcon />}
-            bottomText={<>05/2024<br /><br /></>}
-        />
-        <TimelineEvent 
-            topText={<><br />Present</>}
-            icon={<CertificateIcon />}
-            bottomText={<>FullStack Web<br />Development Bootcamp</>}
-        />
-    </div>
+    return (
+        <motion.div 
+            className="timeline-container"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+        >
+            <hr className="timeline-line" />
+            {timelineEvent.map((event, index) => (
+                <TimelineEvent
+                    key={index}
+                    topText={
+                        index % 2 === 0 ? (
+                            <>
+                                {event.title.split(" ").slice(0, 2).join(" ")}<br />
+                                {event.title.split(" ").slice(2).join(" ")}
+                            </>
+                        ) : (
+                            <><br />{event.date}</>
+                        )
+                    }
+                    icon={<event.icon />}
+                    bottomText={
+                        index % 2 === 0 ? (
+                            <>{event.date}<br /><br /></>
+                        ) : (
+                            <>
+                                {event.title.split(" ").slice(0, 3).join(" ")}<br />
+                                {event.title.split(" ").slice(3).join(" ")}
+                            </>
+                        )
+                    }
+                />
+            ))}
+        </motion.div>
+    );
 }

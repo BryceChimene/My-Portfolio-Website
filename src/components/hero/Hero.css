@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100svh - 90px);
+  height: calc(100svh - 80px);
   z-index: 1;
 }
 
@@ -138,7 +138,7 @@ h4 {
 /* Small Devices (<768px) */
 @media (max-width: 767px) {
   .hero-container {
-    height: calc(100svh - 70px);
+    height: calc(100svh - 60px);
 
   }
   .avatar {

@@ -1,23 +1,46 @@
-import React from "react";
-import "./Hero.css";
+import './Hero.css';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../assets/utils/motionUtils';
 
 import HeroHeader from './HeroHeader';
-import HeroSubHeader from "./HeroSubHeader";
+import HeroTextAnimation from './HeroTextAnimation';
 import Button from './Button';
 
-import Avatar1 from "../../assets/Avatar1";
-import ResumeIcon from '../../assets/hero/ResumeIcon';
-import ContactIcon from '../../assets/hero/ContactIcon';
+import Avatar1 from '../../assets/icons/Avatar1';
+import ResumeIcon from '../../assets/icons/hero/ResumeIcon';
+import ContactIcon from '../../assets/icons/hero/ContactIcon';
 
 export default function Hero() {
   return (
-    <div id='hero' className="hero-container">
-      <Avatar1 />
+    <div id="hero" className="hero-container">
+      <motion.div
+        variants={fadeIn("down", 0.1)}
+        initial="hidden" 
+        animate="show"
+      >
+        <Avatar1 />
+      </motion.div>
+
       <HeroHeader />
-      <HeroSubHeader />
+      <HeroTextAnimation />  
+
       <div className="button-container">
-        <Button img={<ResumeIcon />} text='Resume' />
-        <a href="mailto:brycechimene@yahoo.com"><Button img={<ContactIcon />} text='Contact' /></a>
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden" 
+          animate="show"
+        >
+          <Button img={<ResumeIcon />} text="Resume" />  
+        </motion.div>
+
+        <motion.a href="mailto:brycechimene@yahoo.com"
+          variants={fadeIn("right", 0.3)}
+          initial="hidden" 
+          animate="show"
+        >
+          <Button img={<ContactIcon />} text="Contact" />
+        </motion.a>
       </div>
     </div>
   );
