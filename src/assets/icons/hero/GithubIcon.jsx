@@ -6,7 +6,7 @@ export default function GithubIcon() {
       viewBox="0 0 20 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       className="header-button-icon"
     >
       <title>github [#142]</title>
@@ -14,8 +14,8 @@ export default function GithubIcon() {
       <defs></defs>
       <g
         id="Page-1"
-        stroke-width="1"
-        fill-rule="evenodd"
+        strokeWidth="1"
+        fillRule="evenodd"
       >
         <g
           id="Dribbble-Light-Preview"
