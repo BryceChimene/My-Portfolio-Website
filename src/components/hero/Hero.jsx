@@ -31,7 +31,7 @@ export default function Hero() {
           initial="hidden" 
           animate="show"
         >
-          <Button img={<ResumeIcon />} text="Resume" />  
+          <a href="#portfolio-section"><Button img={<ResumeIcon />} text="Portfolio" /></a>
         </motion.div>
 
         <motion.a href="mailto:brycechimene@yahoo.com"

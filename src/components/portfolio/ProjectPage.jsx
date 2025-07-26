@@ -1,5 +1,7 @@
-import { useParams, Link } from 'react-router-dom';
 import portfolioProjects from '../../assets/utils/portfolioUtils';
+import { useParams, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -25,7 +27,7 @@ export default function ProjectPage() {
             project.link.map((item, index) => (
               <li key={`link-${index}`}>
                 <a className="project-link" href={item.src} target="_blank" rel="noopener noreferrer">
-                  {item.text}
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> {item.text}
                 </a>
               </li>
             ))}
