@@ -15,7 +15,7 @@ export default function Tech() {
             <h4>{category.title}</h4>
             <motion.div
               className='tech-list'
-              variants={fadeIn((idx % 2 === 0 ? 'left' : 'right'), 0.4)}
+              variants={fadeIn((idx % 2 === 0 ? 'left' : 'right'), 0.2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}

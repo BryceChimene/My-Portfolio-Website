@@ -7,7 +7,7 @@ export default function Timeline() {
     return (
         <motion.div 
             className="timeline-container"
-            variants={fadeIn("up", 0.4)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}

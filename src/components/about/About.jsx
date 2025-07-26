@@ -16,7 +16,7 @@ export default function About() {
       <div className="about-container">
         <motion.div 
           className="avatar-container"
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
@@ -25,7 +25,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("down", 0.4)}
+          variants={fadeIn("down", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
@@ -49,22 +49,22 @@ export default function About() {
           viewport={{ once: true }}
         >
           <motion.a target="_blank" rel="noreferrer" href="mailto:brycechimene@yahoo.com"
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.2)}
           >
             <EmailIcon />
           </motion.a>
           <motion.a target="_blank" rel="noreferrer" href="https://github.com/BryceChimene"
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("right", 0.3)}
           >
             <GithubIcon />
           </motion.a>
           <motion.a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chimenebryce/"
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn("right", 0.4)}
           >
             <LinkedinIcon />
           </motion.a>
           <motion.a target="_blank" rel="noreferrer" href="https://www.instagram.com/bryce.chimene/"
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.5)}
           >
             <InstagramIcon />
           </motion.a>

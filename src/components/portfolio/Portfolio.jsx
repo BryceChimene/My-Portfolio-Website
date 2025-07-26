@@ -17,7 +17,7 @@ export default function Portfolio() {
                 <Link to={`/project/${highlightProject.id}`} className="highlight-link">
                     <motion.div 
                         className="highlight-container"
-                        variants={fadeIn("left", 0.4)}
+                        variants={fadeIn("left", 0.2)}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
